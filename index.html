@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Game!</h1>
+    <div id="game">
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <section class= "memory-game">
+    <div class= "memory-card">
+      <img class= "front" src="https://ouch-cdn2.icons8.com/5ooU_OVykfqTDhhx5ZPjsITeou2fHLKJ8TJHgf26HHM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODAy/Lzk4NDU0ZWJmLWQ3/MWItNGIwZC1hZTRi/LTAzMDlhYzk1YTZl/MS5zdmc.png" alt="front-blue"/>
+      <img class="back" src="https://freesvg.org/img/1286146771.png" alt="back-red"/>
+    </div>
+    <div class= "memory-card">
+      <img class= "front" src="https://ouch-cdn2.icons8.com/5ooU_OVykfqTDhhx5ZPjsITeou2fHLKJ8TJHgf26HHM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODAy/Lzk4NDU0ZWJmLWQ3/MWItNGIwZC1hZTRi/LTAzMDlhYzk1YTZl/MS5zdmc.png" alt="front-blue"/>
+      <img class="back" src="https://freesvg.org/img/1286146771.png" alt="back-red"/>
+    </div>
+    <div class= "memory-card">
+      <img class= "front" src="https://ouch-cdn2.icons8.com/5ooU_OVykfqTDhhx5ZPjsITeou2fHLKJ8TJHgf26HHM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODAy/Lzk4NDU0ZWJmLWQ3/MWItNGIwZC1hZTRi/LTAzMDlhYzk1YTZl/MS5zdmc.png" alt="front-blue"/>
+      <img class="back" src="https://preview.redd.it/w7xrqurkbxy41.jpg?width=640&crop=smart&auto=webp&s=89972b7d8edbb8f60d09183e9c0084288df7c131" alt="back-purple"/>
+    </div>
+    <div class= "memory-card">
+      <img class= "front" src="https://ouch-cdn2.icons8.com/5ooU_OVykfqTDhhx5ZPjsITeou2fHLKJ8TJHgf26HHM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODAy/Lzk4NDU0ZWJmLWQ3/MWItNGIwZC1hZTRi/LTAzMDlhYzk1YTZl/MS5zdmc.png" alt="front-blue"/>
+      <img class="back" src="https://preview.redd.it/w7xrqurkbxy41.jpg?width=640&crop=smart&auto=webp&s=89972b7d8edbb8f60d09183e9c0084288df7c131" alt="back-purple"/>
+    </div>
+    <div class= "memory-card">
+      <img class= "front" src="https://ouch-cdn2.icons8.com/5ooU_OVykfqTDhhx5ZPjsITeou2fHLKJ8TJHgf26HHM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODAy/Lzk4NDU0ZWJmLWQ3/MWItNGIwZC1hZTRi/LTAzMDlhYzk1YTZl/MS5zdmc.png" alt="front-blue"/>
+      <img class="back" src="http://cdn.shopify.com/s/files/1/2175/7819/collections/Orange.png?v=1679420619" alt="back-orange"/>
+    </div>
+    <div class= "memory-card">
+      <img class= "front" src="https://ouch-cdn2.icons8.com/5ooU_OVykfqTDhhx5ZPjsITeou2fHLKJ8TJHgf26HHM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODAy/Lzk4NDU0ZWJmLWQ3/MWItNGIwZC1hZTRi/LTAzMDlhYzk1YTZl/MS5zdmc.png" alt="front-blue"/>
+      <img class="back" src="http://cdn.shopify.com/s/files/1/2175/7819/collections/Orange.png?v=1679420619" alt="back-orange"/>
+    </div>
+    <div class= "memory-card">
+      <img class= "front" src="https://ouch-cdn2.icons8.com/5ooU_OVykfqTDhhx5ZPjsITeou2fHLKJ8TJHgf26HHM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODAy/Lzk4NDU0ZWJmLWQ3/MWItNGIwZC1hZTRi/LTAzMDlhYzk1YTZl/MS5zdmc.png" alt="front-blue"/>
+      <img class="back" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAS1BMVEUAgAAAewB9vX2MxIybzJsAeQCr1Ku42rgAdwC527mBv4HZ7NkAcwB0uXR4unj8/vzz9/Pk8OTP5s/I4siy17KRx5GgzqCOxY6ezZ4n9oUoAAABg0lEQVR4nO3dS24CQQwA0Z4/zQx/BnL/k2aQyCLZBCEhKHe9E7jkrSWn3f4wHk+nPORzv2jv5uaX+mnr5l9z+4BL/4ghD3+M6TytFt2P6mN1T5k2qe9SZFVdQOElfGFbvXuIl7KQz0I+C/ks5LOQr4jCOXxhYyGbhXwW8lnIZyGfhXwW8lnIZyGfhXwW8lnIZyGfhXwW8lnIV0RhbSGbhXwW8lnIZyGfhXwW8lnIZyGfhXwW8lnIZyGfhXwW8lnIZyGfhXwW8hVRuA5fGP9iyEI4C/ks5LOQz0I+C/ks5LOQz0I+C/ks5LOQz0I+C/ks5LOQz0I+C/ks5Cui8Bq+MP6fGQvhLOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5iij8Cl/Yd+8e4qUs5LOQz0I+C/ks5LOQz0I+C/ks5LOQz0I+C/ks5LOQz0I+C/ks5LOQbykcwhfm8IXxd2ghnIV8FvJZyGchn4V8FvLdCqcqstU2jZs6sm3+Bjn6EUWa4rsaAAAAAElFTkSuQmCC" alt="back-green"/>
+    </div>
+    <div class= "memory-card">
+      <img class= "front" src="https://ouch-cdn2.icons8.com/5ooU_OVykfqTDhhx5ZPjsITeou2fHLKJ8TJHgf26HHM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODAy/Lzk4NDU0ZWJmLWQ3/MWItNGIwZC1hZTRi/LTAzMDlhYzk1YTZl/MS5zdmc.png" alt="front-blue"/>
+      <img class="back" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAS1BMVEUAgAAAewB9vX2MxIybzJsAeQCr1Ku42rgAdwC527mBv4HZ7NkAcwB0uXR4unj8/vzz9/Pk8OTP5s/I4siy17KRx5GgzqCOxY6ezZ4n9oUoAAABg0lEQVR4nO3dS24CQQwA0Z4/zQx/BnL/k2aQyCLZBCEhKHe9E7jkrSWn3f4wHk+nPORzv2jv5uaX+mnr5l9z+4BL/4ghD3+M6TytFt2P6mN1T5k2qe9SZFVdQOElfGFbvXuIl7KQz0I+C/ks5LOQr4jCOXxhYyGbhXwW8lnIZyGfhXwW8lnIZyGfhXwW8lnIZyGfhXwW8lnIV0RhbSGbhXwW8lnIZyGfhXwW8lnIZyGfhXwW8lnIZyGfhXwW8lnIZyGfhXwW8hVRuA5fGP9iyEI4C/ks5LOQz0I+C/ks5LOQz0I+C/ks5LOQz0I+C/ks5LOQz0I+C/ks5Cui8Bq+MP6fGQvhLOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5iij8Cl/Yd+8e4qUs5LOQz0I+C/ks5LOQz0I+C/ks5LOQz0I+C/ks5LOQz0I+C/ks5LOQbykcwhfm8IXxd2ghnIV8FvJZyGchn4V8FvLdCqcqstU2jZs6sm3+Bjn6EUWa4rsaAAAAAElFTkSuQmCC" alt="back-green"/>
+    </div>
+    <div class= "memory-card">
+      <img class= "front" src="https://ouch-cdn2.icons8.com/5ooU_OVykfqTDhhx5ZPjsITeou2fHLKJ8TJHgf26HHM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODAy/Lzk4NDU0ZWJmLWQ3/MWItNGIwZC1hZTRi/LTAzMDlhYzk1YTZl/MS5zdmc.png" alt="front-blue"/>
+      <img class="back" src="https://images.ctfassets.net/m8onsx4mm13s/5bonMhH5HaYkL6koFwHbkB/b1f6dab7b08eff13a2c277647a8c81e5/__static.gibson.com_product-images_Epiphone_EPIS5Q712_Sunset_Yellow_Sunset_Yellow.jpg" alt="back-yellow"/>
+    </div>
+    <div class= "memory-card">
+      <img class= "front" src="https://ouch-cdn2.icons8.com/5ooU_OVykfqTDhhx5ZPjsITeou2fHLKJ8TJHgf26HHM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODAy/Lzk4NDU0ZWJmLWQ3/MWItNGIwZC1hZTRi/LTAzMDlhYzk1YTZl/MS5zdmc.png" alt="front-blue"/>
+      <img class="back" src="https://images.ctfassets.net/m8onsx4mm13s/5bonMhH5HaYkL6koFwHbkB/b1f6dab7b08eff13a2c277647a8c81e5/__static.gibson.com_product-images_Epiphone_EPIS5Q712_Sunset_Yellow_Sunset_Yellow.jpg" alt="back-yellow"/>
+    </div>
+  </section>
+  <script src="script.js"></script>
+ </body>
+ </html>
